@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:iconifiedByDefault="false"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:queryHint="search food"/>
+
+        <LinearLayout
+            android:id="@+id/cardviewkuning"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintCircleRadius="46dp"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/searchView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="100000"
+                android:translationY="-10dp"
+                android:layout_marginLeft="-56dp"
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="475dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@id/bus"
+                    android:background="@drawable/custom3" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#00008577"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/menuicon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:text="let's eat "
+            android:textSize="25sp"
+
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Quality food"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="1dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="100000">
+
+            <RelativeLayout
+                android:id="@+id/semua"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/bus"
+                android:background="@drawable/custombutton2" >
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/udang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/makanan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custombutton2"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/bus">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/udang" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/minuman"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custombutton2"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/bus">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/udang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/snack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custombutton2"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/bus">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/udang" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="19dp"
+                android:text="semua"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/yellow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/semua">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="19dp"
+                android:text="Makanan"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/semua">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="220dp"
+                android:layout_marginLeft="19dp"
+                android:text="Snack"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/semua">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="19dp"
+                android:text="Minuman"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/semua">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="130dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="100000">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custombutton">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@id/cumi"
+                        android:background="@drawable/custombutton"
+                        android:text="Beli"
+                        android:textAllCaps="false"
+                        android:textSize="17dp" />
+
+
+                    <ImageView
+                        android:id="@+id/cumi"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/udang" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custombutton">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@id/bus"
+                        android:background="@drawable/custombutton"
+                        android:text="Beli"
+                        android:textAllCaps="false"
+                        android:textSize="17dp" />
+
+                    <ImageView
+                        android:id="@+id/bus"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/udang" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custombutton">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@id/lobster"
+                        android:background="@drawable/custombutton"
+                        android:text="Beli"
+                        android:textAllCaps="false"
+                        android:textSize="17dp" />
+
+                    <ImageView
+                        android:id="@+id/lobster"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/udang" />ling_500" />
+
+
+                </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custombutton">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@id/esteh"
+                        android:background="@drawable/custombutton"
+                        android:textAllCaps="false"
+                        android:text="Beli"
+                        android:textSize="17dp" />
+
+                    <ImageView
+                        android:id="@+id/esteh"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/udang" />ling_500" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
